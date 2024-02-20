@@ -1,0 +1,34 @@
+{{page-title "Cart"}}
+<GeneralContainer></GeneralContainer>
+<main class="container mt-5">
+<h1>Shopping cart</h1>
+{{#each this.cart.itemList as |item|}}
+     <div class="cart-item d-flex align-items-center">
+      <div class="cart-item-thumbnail">
+        <img src={{item.image}} alt="">
+      </div>
+      <div class="ml-3">
+        <h4>{{item.name}}</h4>
+        <i class="font-weight-bold">{{currency item.price}}</i>
+      </div>
+      </div>
+  {{/each}}
+     <section class="w-50 ml-auto text-right mb-5">
+  
+        <div class="row">
+        <span class="col">subtotal</span>
+        <span class="col">{{currency this.subtotal }}</span>
+        </div>
+        <div class="row">
+        <span class="col">tax</span>
+        <span class="col">{{currency this.tax}}</span>
+        </div>
+        <div class="row">
+        <span class="col">total</span>
+        <span class="col">{{currency this.total}}</span>
+        </div>
+    
+</section>
+  <button type="button" class="btn btn-success float-right">Check out</button>
+</main>
+{{outlet}}

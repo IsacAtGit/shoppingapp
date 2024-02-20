@@ -1,0 +1,9 @@
+{{page-title "Shoppingpage"}}
+<GeneralContainer>
+   {{#each this.model as |product|}}
+ 
+      <ProductComponent @product= {{product}}/>
+   {{/each}}
+   
+    
+</GeneralContainer>

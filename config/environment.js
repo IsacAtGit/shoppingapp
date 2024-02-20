@@ -2,7 +2,7 @@
 
 module.exports = function (environment) {
   const ENV = {
-    modulePrefix: 'librarymangementfrontend',
+    modulePrefix: 'shoppingapp',
     environment,
     rootURL: '/',
     locationType: 'history',

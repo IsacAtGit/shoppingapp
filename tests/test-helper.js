@@ -1,5 +1,5 @@
-import Application from 'librarymangementfrontend/app';
-import config from 'librarymangementfrontend/config/environment';
+import Application from 'shoppingapp/app';
+import config from 'shoppingapp/config/environment';
 import * as QUnit from 'qunit';
 import { setApplication } from '@ember/test-helpers';
 import { setup } from 'qunit-dom';
